@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+{% block body %} 
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .flexy{
+        display: flex;
+        align-items: center;
+        
+    }
+    .left{
+        border: 2px solid ;
+    }
+    .right{
+        border-top: 2px solid ;
+        border-right: 2px solid;
+        border-bottom:  2px solid;
+    }
+    .tbody{
+        height:50vh;
+    }
+    .top{
+        border-bottom:  2px solid; 
+    }
+.groups:hover{
+    background-color: orange;
+color: white;
+    
+}
+.footers{
+  
+   border-top: 1px solid white;
+}
+.stock_summary{
+    background-color:rgba(0,0,0,.3);
+}
+
+</style>
+<div class="stock_summary">
+    <h6 class="heading p-2 text-light text-center bg-info m-0 ">STOCK GROUP SUMMARY</h6>
+    
+        <div class="thead row container-fluid p-0 m-0">
+            
+ 
+            <div class="left col-sm-8 flexy col-6 px-sm-4 m-0 ">
+                <h4>P a r t i c u l a r s</h4>
+            </div>
+
+            <div class="right col-sm-4 col-6 p-0 m-0 ">
+
+                <div  class="text-center top p-2">
+                    <h6>Company Name</h6>
+                    <p>april-1-2022</p>
+
+                </div>
+
+                <div class="bottom p-2">
+                    <h6 class="text-center">Closing Balance</h6>
+
+                    <div class="row text-center container-fluid p-0 m-0">
+                        <div class="col-4 p-2">Quantity</div>
+                        <div class="col-4 p-2">Rate</div>
+                        <div class="col-4 p-2">Value</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    <div class="tbody p-0 m-0 container-fluid">
+
+        <div class="groups row container-fluid p-1 m-0">
+            <div class="name col-sm-8 col-6 p-0 m-0 flexy">
+                <h6>Item 1</h6>
+            </div>
+            <div class="cash col-sm-4 col-6 row p-0 m-0 text-center">
+                <div class="col-4 p-2">20</div>
+                <div class="col-4 p-2">100</div>
+                <div class="col-4 p-2">2000</div>
+            </div>
+        </div>
+        
+        <div class="groups row container-fluid p-1 m-0">
+            <div class="name col-sm-8 col-6 p-0 m-0 flexy">
+                <h6>Item 2</h6>
+            </div>
+            <div class="cash col-sm-4 col-6 row p-0 m-0 text-center">
+                <div class="col-4 p-2">250</div>
+                <div class="col-4 p-2">500</div>
+                <div class="col-4 p-2">125000</div>
+            </div>
+        </div>
+
+            <div class="groups row container-fluid p-1 m-0">
+                <div class="name col-sm-8 col-6 p-0 m-0 flexy">
+                    <h6>Item 3</h6>
+                </div>
+                <div class="cash col-sm-4 col-6 row p-0 m-0 text-center">
+                    <div class="col-4 p-2">500</div>
+                    <div class="col-4 p-2">500</div>
+                    <div class="col-4 p-2">250000</div>
+                </div>
+            </div>
+
+            <div class="groups row container-fluid p-1 m-0">
+                <div class="name col-sm-8 col-6 p-0 m-0 flexy">
+                    <h6>Item 4</h6>
+                </div>
+                <div class="cash col-sm-4 col-6 row p-0 m-0 text-center">
+                    <div class="col-4 p-2">500</div>
+                    <div class="col-4 p-2">500</div>
+                    <div class="col-4 p-2">250000</div>
+                </div>
+            </div>
+
+                
+        </div>
+
+
+        <div class="footers p-2 container-fluid">
+            <div class="row">
+                <div class="col-sm-8 col-6">
+                    <h6>G r a n d T o t a l</h6>
+                </div>
+            
+            <div class="cash col-sm-4 col-6 row p-0 m-0 text-center">
+                <div class="col-4 text-end">
+                    <p>360</p>
+                </div>
+                <div class="col-4 text-end">
+
+                </div>
+                    
+                <div class="col-4 text-end">
+                    <p>62700.00Rs</p>
+                </div>
+        
+            </div>
+            
+        </div>
+
+</div>
+
+
+{% endblock %}
