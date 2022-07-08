@@ -1,0 +1,484 @@
+{% extends 'base.html' %}
+{% block body %}
+      
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .flexy{
+        display: flex;
+        align-items: center;
+        
+    }
+    .left{
+        border: 2px solid ;
+    }
+    .right{
+        border-top: 2px solid ;
+        border-right: 2px solid;
+        border-bottom:  2px solid;
+    }
+    .tbody{
+        height:50vh;
+    }
+    .top{
+        border-bottom:  2px solid; 
+    }
+.groups:hover{
+    background-color: orange;
+color: white;
+    
+}
+.footers{
+  
+   border-top: 1px solid white;
+}
+.stock_summary{
+    background-color:rgba(0,0,0,.3);
+}
+.bdrl{
+    border-right: 1px solid;
+}
+.bdrb{
+    border-bottom: 1px solid;
+}
+
+</style>
+<div class="stock_summary">
+    <h6 class="heading p-2 text-light text-center bg-info m-0 ">STOCK SUMMARY</h6>
+    
+        <div class="thead row container-fluid p-0 m-0">
+            
+ 
+            <div class="left flexy col-4 px-sm-4 m-0 ">
+                <h4>P a r t i c u l a r s</h4>
+            </div>
+
+            <div class="right col-8 p-0 m-0 ">
+
+                <div  class="text-center top p-0">
+                    <p class="p-0 m-0">Item one</p>
+                    <h6 class="p-0 m-0">Company Name</h6>
+                    <p class="p-0 m-0">april-1-2022</p>
+
+                </div>
+
+                <div class="bottom p-0">
+                    
+
+                    <div class="row text-center container-fluid p-0 m-0">
+
+                        <div class="col-4 p-0 bdrl m-0">
+                            <h6 class="p-0 m-0">Inwards</h6>
+                            <div class="row container-fluid p-0 m-0">
+                                <div class="col-sm-6 p-0 m-0">
+                                   <p class="p-0 m-0">Quality</p> 
+                                </div>
+                                <div class="col-sm-6 p-0 m-0">
+                                    <p class="p-0 m-0">Value</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 p-0 m-0 bdrl">
+                            <h6 class="p-0 m-0 p-0 m-0">Outwards</h6>
+                            <div class="row container-fluid p-0 m-0">
+                                <div class="col-sm-6 p-0 m-0">
+                                   <p class="p-0 m-0">Quality</p> 
+                                </div>
+                                <div class="col-sm-6 p-0 m-0">
+                                    <p class="p-0 m-0">Value</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-4 p-0 m-0">
+                            <h6 class="p-0 m-0">Closing Balance</h6>
+                            <div class="row container-fluid p-0 m-0">
+                                <div class="col-sm-6 p-0 m-0">
+                                   <p class="p-0 m-0">Quality</p> 
+                                </div>
+                                <div class="col-sm-6 p-0 m-0">
+                                    <p class="p-0 m-0">Value</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    <div class="tbody p-0 m-0 container-fluid">
+
+        <div class="groups row container-fluid p-0 m-0 ">
+
+            <div class="name col-4 p-0 px-2 m-0 flexy bdrl">
+              <a href="load_stock_voucher"><h6>Opening Balance</h6></a>  
+            </div>
+            <div class="cash  col-8 row p-0 m-0 text-center">
+                <div class="col-4 p-0 m-0 bdrl row container-fluid">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 bdrl row ">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 row">
+                    <div class="col-6 p-0 m-0">50</div>
+                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="groups row container-fluid p-0 m-0">
+
+            <div class="name col-4 p-0 m-0 flexy bdrl  px-2 ">
+              <a href="load_stock_group"><h6>April</h6></a>  
+            </div>
+            <div class="cash  col-8 row p-0 m-0 text-center">
+                <div class="col-4 p-0 m-0 bdrl row container-fluid">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 bdrl row ">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 row">
+                    <div class="col-6 p-0 m-0">50</div>
+                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="groups row container-fluid p-0 m-0">
+
+            <div class="name col-4 p-0 m-0 flexy bdrl px-2 ">
+              <a href="load_stock_group"><h6>May</h6></a>  
+            </div>
+            <div class="cash  col-8 row p-0 m-0 text-center">
+                <div class="col-4 p-0 m-0 bdrl row container-fluid">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 bdrl row ">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 row">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="groups row container-fluid p-0 m-0">
+
+            <div class="name col-4 p-0 m-0 flexy bdrl px-2 ">
+              <a href="load_stock_group"><h6>June</h6></a>  
+            </div>
+            <div class="cash  col-8 row p-0 m-0 text-center">
+                <div class="col-4 p-0 m-0 bdrl row container-fluid">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 bdrl row ">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 row">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="groups row container-fluid p-0 m-0">
+
+            <div class="name col-4 p-0 m-0 flexy bdrl px-2 ">
+              <a href="load_stock_group"><h6>July</h6></a>  
+            </div>
+            <div class="cash  col-8 row p-0 m-0 text-center">
+                <div class="col-4 p-0 m-0 bdrl row container-fluid">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 bdrl row ">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 row">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+
+                </div>
+            </div>
+        </div>
+        <div class="groups row container-fluid p-0 m-0">
+
+            <div class="name col-4 p-0 m-0 flexy bdrl px-2 ">
+              <a href="load_stock_group"><h6>August</h6></a>  
+            </div>
+            <div class="cash  col-8 row p-0 m-0 text-center">
+                <div class="col-4 p-0 m-0 bdrl row container-fluid">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 bdrl row ">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 row">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="groups row container-fluid p-0 m-0">
+
+            <div class="name col-4 p-0 m-0 flexy bdrl px-2 ">
+              <a href="load_stock_group"><h6>September</h6></a>  
+            </div>
+            <div class="cash  col-8 row p-0 m-0 text-center">
+                <div class="col-4 p-0 m-0 bdrl row container-fluid">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 bdrl row ">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 row">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="groups row container-fluid p-0 m-0">
+
+            <div class="name col-4 p-0 m-0 flexy bdrl px-2 ">
+              <a href="load_stock_group"><h6>October</h6></a>  
+            </div>
+            <div class="cash  col-8 row p-0 m-0 text-center">
+                <div class="col-4 p-0 m-0 bdrl row container-fluid">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 bdrl row ">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 row">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="groups row container-fluid p-0 m-0">
+
+            <div class="name col-4 p-0 m-0 flexy bdrl px-2 ">
+              <a href="load_stock_group"><h6>November</h6></a>  
+            </div>
+            <div class="cash  col-8 row p-0 m-0 text-center">
+                <div class="col-4 p-0 m-0 bdrl row container-fluid">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 bdrl row ">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 row">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="groups row container-fluid p-0 m-0">
+
+            <div class="name col-4 p-0 m-0 flexy bdrl px-2 ">
+              <a href="load_stock_group"><h6>December</h6></a>  
+            </div>
+            <div class="cash  col-8 row p-0 m-0 text-center">
+                <div class="col-4 p-0 m-0 bdrl row container-fluid">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 bdrl row ">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 row">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="groups row container-fluid p-0 m-0">
+
+            <div class="name col-4 p-0 m-0 flexy bdrl px-2 ">
+              <a href="load_stock_group"><h6>January</h6></a>  
+            </div>
+            <div class="cash  col-8 row p-0 m-0 text-center">
+                <div class="col-4 p-0 m-0 bdrl row container-fluid">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 bdrl row ">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 row">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="groups row container-fluid p-0 m-0">
+
+            <div class="name col-4 p-0 m-0 flexy bdrl px-2 ">
+              <a href="load_stock_group"><h6>february</h6></a>  
+            </div>
+            <div class="cash  col-8 row p-0 m-0 text-center">
+                <div class="col-4 p-0 m-0 bdrl row container-fluid">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 bdrl row ">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 row">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="groups row container-fluid p-0 m-0 bdrb">
+
+            <div class="name col-4 p-0 m-0 flexy bdrl px-2 ">
+              <a href="load_stock_group"><h6>March</h6></a>  
+            </div>
+            <div class="cash  col-8 row p-0 m-0 text-center">
+                <div class="col-4 p-0 m-0 bdrl row container-fluid">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 bdrl row ">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
+
+                </div>
+                <div class="col-4 p-0 m-0 row ">
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+       
+
+                
+        </div>
+
+
+<div class="footers container-fluid p-0 m-0">
+<!-- <div class="row container-fluid">
+    <div class=" col-4"><h6>G r a n d T o t a l</h6></div>
+    <div class="col-8 row container-fluid">
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+        <div class="col-4 row">
+            <div class="col-6">100</div>
+            <div class="col-6">3000.0Rs</div>
+            
+        </div>
+        
+    </div>
+</div> -->
+
+<div class="row container-fluid p-0 m-0">
+
+    <div class="name col-4 p-0 m-0 flexy px-2   ">
+      <h6 class="">G r a n d T o t a l</h6>
+    </div>
+    <div class="cash  col-8 row p-0 m-0 text-center">
+        <div class="col-4 p-0 m-0 row container-fluid">
+            <div class="col-6 p-0 m-0"></div>
+            <div class="col-6 p-0 m-0"></div>
+
+        </div>
+        <div class="col-4 p-0 m-0  row container-fluid">
+            <div class="col-6 p-0 m-0"></div>
+            <div class="col-6 p-0 m-0"></div>
+
+        </div>
+        <div class="col-4 p-0 m-0 row container-fluid ">
+            <div class="col-6 p-0 m-0">50</div>
+            <div class="col-6 p-0 m-0">1500.00Rs</div>
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+</div>
+{% endblock %}
