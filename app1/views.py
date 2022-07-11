@@ -15,6 +15,8 @@ def load_stock_group(request):
 def load_item_details(request):
     return render(request, 'load_item_details.html')
 
-def load_stock_voucher(request):
-    return render(request, 'load_stock_voucher.html')
+def load_stock_vouchers(request):
+    return render(request, 'load_stock_vouchers.html')
 
+def load_voucher_receipt(request):
+    return render(request, 'load_voucher_receipt.html')
