@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block body %} 
+<form action="save_group" method="post" class="p-5 m-sm-5 w-50"class="width container py-sm-5 my-sm-5" style=" backdrop-filter: blur(5px);
+background-color: rgba(0, 0,0, .4);box-shadow: 2px 2px 5px gray; display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+border-radius: 20px;
+">
+    {% csrf_token %}
+    <h2 class="TEXT-CENTER my-3">CREATE GROUP</h2>
+    <!-- <input type="number" name="csno" class="form-control" placeholder="Course Number"><br> -->
+    <input type="text" name="Group_name" class=" px-3 py-2 m-0 my-2 w-75 rounded-pill" placeholder="Enter Group">
+    
+    <button type="submit" class="btn btn-info w-50  rounded-pill">Submit</button>
+    
+</form>
+
+
+{% endblock %}
