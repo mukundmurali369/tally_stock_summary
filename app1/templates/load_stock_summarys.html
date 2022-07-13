@@ -75,49 +75,21 @@ color: white;
 
     <div class="tbody p-0 m-0 container-fluid">
 
+        {% for i in stk %}
+        <a href="{% url 'load_stock_group' i.id  %}">
         <div class="groups row container-fluid p-1 m-0">
             <div class="name col-sm-8 col-6 p-0 m-0 flexy">
-              <a href="load_stock_group"><h6>Group one</h6></a>  
+            <h6>{{ i.Group_name}}</h6> 
             </div>
             <div class="cash col-sm-4 col-6 row p-0 m-0 text-center">
                 <div class="col-4 p-2"></div>
                 <div class="col-4 p-2"></div>
-                <div class="col-4 p-2">500.00Rs</div>
+                <div class="col-4 p-2">{{i.Group_total}} ₹</div>
             </div>
         </div>
+    </a> 
+        {% endfor %}
         
-        <div class="groups row container-fluid p-1 m-0">
-            <div class="name col-sm-8 col-6 p-0 m-0 flexy">
-                <h6>Group 2</h6>
-            </div>
-            <div class="cash col-sm-4 col-6 row p-0 m-0 text-center">
-                <div class="col-4 p-2"></div>
-                <div class="col-4 p-2"></div>
-                <div class="col-4 p-2">15000.00Rs</div>
-            </div>
-        </div>
-
-            <div class="groups row container-fluid p-1 m-0">
-                <div class="name col-sm-8 col-6 p-0 m-0 flexy">
-                    <h6>Group 3</h6>
-                </div>
-                <div class="cash col-sm-4 col-6 row p-0 m-0 text-center">
-                    <div class="col-4 p-2"></div>
-                    <div class="col-4 p-2"></div>
-                    <div class="col-4 p-2">10000.00Rs</div>
-                </div>
-            </div>
-
-            <div class="groups row container-fluid p-1 m-0">
-                <div class="name col-sm-8 col-6 p-0 m-0 flexy">
-                    <h6>Group 4</h6>
-                </div>
-                <div class="cash col-sm-4 col-6 row p-0 m-0 text-center">
-                    <div class="col-4 p-2"></div>
-                    <div class="col-4 p-2"></div>
-                    <div class="col-4 p-2">15000.00Rs</div>
-                </div>
-            </div>
 
                 
         </div>
@@ -126,7 +98,7 @@ color: white;
 <div class="footers container-fluid p-2">
 <div class="row">
     <div class="col-sm-11 col-6"><h6>G r a n d T o t a l</h6></div>
-    <div class="col-sm-1 col-6 text-end"><p>3000.0Rs</p></div>
+    <div class="col-sm-1 col-6 text-end"><p>{{ money }} ₹</p></div>
 </div>
 </div>
 

@@ -73,52 +73,21 @@ color: white;
         </div>
 
     <div class="tbody p-0 m-0 container-fluid">
-
+{%for i in items %}
         <a href="load_item_details"><div class="groups row container-fluid p-1 m-0">
             <div class="name col-sm-8 col-6 p-0 m-0 flexy">
-                <h6>Item 1</h6>
+                <h6>{{ i.Item_name }}</h6>
             </div>
             <div class="cash col-sm-4 col-6 row p-0 m-0 text-center">
-                <div class="col-4 p-2">20</div>
-                <div class="col-4 p-2">100</div>
-                <div class="col-4 p-2">2000</div>
+                <div class="col-4 p-2">{{ i.Quantity }} Unt</div>
+                <div class="col-4 p-2">{{ i.Rate }} ₹/Unt</div>
+                <div class="col-4 p-2">{{ i.Value }} ₹</div>
             </div>
         </div>
-    </a>
+        </a>
+    {% endfor %}
         
-        <div class="groups row container-fluid p-1 m-0">
-            <div class="name col-sm-8 col-6 p-0 m-0 flexy">
-                <h6>Item 2</h6>
-            </div>
-            <div class="cash col-sm-4 col-6 row p-0 m-0 text-center">
-                <div class="col-4 p-2">250</div>
-                <div class="col-4 p-2">500</div>
-                <div class="col-4 p-2">125000</div>
-            </div>
-        </div>
-
-            <div class="groups row container-fluid p-1 m-0">
-                <div class="name col-sm-8 col-6 p-0 m-0 flexy">
-                    <h6>Item 3</h6>
-                </div>
-                <div class="cash col-sm-4 col-6 row p-0 m-0 text-center">
-                    <div class="col-4 p-2">500</div>
-                    <div class="col-4 p-2">500</div>
-                    <div class="col-4 p-2">250000</div>
-                </div>
-            </div>
-
-            <div class="groups row container-fluid p-1 m-0">
-                <div class="name col-sm-8 col-6 p-0 m-0 flexy">
-                    <h6>Item 4</h6>
-                </div>
-                <div class="cash col-sm-4 col-6 row p-0 m-0 text-center">
-                    <div class="col-4 p-2">500</div>
-                    <div class="col-4 p-2">500</div>
-                    <div class="col-4 p-2">250000</div>
-                </div>
-            </div>
-
+        
                 
         </div>
 
@@ -131,14 +100,14 @@ color: white;
             
             <div class="cash col-sm-4 col-6 row p-0 m-0 text-center">
                 <div class="col-4 text-end">
-                    <p>360</p>
+                    <p>{{ qnty }} Unt</p>
                 </div>
                 <div class="col-4 text-end">
 
                 </div>
                     
                 <div class="col-4 text-end">
-                    <p>62700.00Rs</p>
+                    <p>{{ money }} ₹</p>
                 </div>
         
             </div>

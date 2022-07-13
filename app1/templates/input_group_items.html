@@ -2,8 +2,8 @@
 {% extends 'base.html' %}
 {% block body %} 
 
-
-<form action="save_group_items" method="post" class=" p-3 my-5 "  style=" backdrop-filter: blur(5px);
+<div class="w-50">
+<form action="save_group_item" method="post" class=" p-3 my-5 "  style=" backdrop-filter: blur(5px);
 background-color: rgba(0, 0,0, .2);box-shadow: 2px 2px 5px gray; display: flex;
 align-items: center;
 justify-content: center;
@@ -12,25 +12,24 @@ border-radius: 20px;
 ">
     {% csrf_token %}
     
-    <h2 class="TEXT-CENTER py-2">Add Items</h2>
-    <div style="width:75%; padding:5px;"><h5 class=" p-0 m-0 w-50">Course</h5></div>
+    <h2 class="TEXT-CENTER py-2">ADD ITEMS</h2>
+    <div style="width:75%; padding:5px;"><h5 class=" p-0 m-0 w-50">Group</h5></div>
     <select class=" px-3 py-2 m-0 w-75 rounded-pill" name="Group">
-        {% for i in group %}
+        {% for i in grp %}
         <option value="{{ i.id }}">{{ i.Group_name}}</option>
         {% endfor %}
     </select>
     <div style="width:75%; padding:5px;"><h5 class=" p-0 m-0">Item Name</h5></div>
     <input type="text" name="Item_name"class=" px-3 py-2 m-0  w-75 rounded-pill" placeholder="item name"><br>
     <div style="width:75%; padding:5px;"><h5 class=" p-0 m-0">Quantity</h5></div>
-    <input type="text" name="Quantity" row="3" class=" px-3 py-2 m-0 w-75 rounded-pill" placeholder="Quantity"><br>
+    <input type="number" name="Quantity" class=" px-3 py-2 m-0 w-75 rounded-pill" placeholder="Quantity"><br>
     <div style="width:75%; padding:5px;"><h5 class=" p-0 m-0">Rate</h5></div>
     <input type="number" name="Rate" class=" px-3 py-2 m-0 w-75 rounded-pill" placeholder="Rate"><br>
-    <div style="width:75%; padding:5px;"><h5 class=" p-0 m-0">Value</h5></div>
-    <input type="number" name="Value" class=" px-3 py-2 m-0 w-75 rounded-pill" placeholder=""><br>
+    
     
 
     <button type="submit" class="btn btn-info w-50 px-3 py-2 my-4 rounded-pill ">Submit</button>
     
 </form>
-
+</div>
 {% endblock %}
