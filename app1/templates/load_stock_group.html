@@ -74,9 +74,9 @@ color: white;
 
     <div class="tbody p-0 m-0 container-fluid">
 {%for i in items %}
-        <a href="load_item_details"><div class="groups row container-fluid p-1 m-0">
+        <a href="{% url 'load_item_details' i.Item_name.id  %}"><div class="groups row container-fluid p-1 m-0">
             <div class="name col-sm-8 col-6 p-0 m-0 flexy">
-                <h6>{{ i.Item_name }}</h6>
+                <h6>{{ i.Item_name.Item_name }}</h6>
             </div>
             <div class="cash col-sm-4 col-6 row p-0 m-0 text-center">
                 <div class="col-4 p-2">{{ i.Quantity }} Unt</div>

@@ -59,9 +59,9 @@ color: white;
             <div class="right col-8 p-0 m-0 ">
 
                 <div  class="text-center top p-0">
-                    <p class="p-0 m-0">Item one</p>
+                    <p class="p-0 m-0">{{ i.Item_name.Item_name}}</p>
                     <h6 class="p-0 m-0">Company Name</h6>
-                    <p class="p-0 m-0">april-1-2022</p>
+                    <p class="p-0 m-0">April-1-2022</p>
 
                 </div>
 
@@ -133,18 +133,20 @@ color: white;
                     <div class="col-6 p-0 m-0"></div>
 
                 </div>
+                {%for i in open%}
                 <div class="col-4 p-0 m-0 row">
-                    <div class="col-6 p-0 m-0">50</div>
-                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+                    <div class="col-6 p-0 m-0">{{ openq }}</div>
+                    <div class="col-6 p-0 m-0">{{ openv }}</div>
 
                 </div>
+                {% endfor%}
             </div>
         </div>
 
         <div class="groups row container-fluid p-0 m-0">
 
             <div class="name col-4 p-0 m-0 flexy bdrl  px-2 ">
-              <a href="load_stock_vouchers"><h6>April</h6></a>  
+                <a href="load_stock_vouchers"><h6>April</h6></a>  
             </div>
             <div class="cash  col-8 row p-0 m-0 text-center">
                 <div class="col-4 p-0 m-0 bdrl row container-fluid">
@@ -158,8 +160,8 @@ color: white;
 
                 </div>
                 <div class="col-4 p-0 m-0 row">
-                    <div class="col-6 p-0 m-0">50</div>
-                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0"></div>
 
                 </div>
             </div>
@@ -183,7 +185,7 @@ color: white;
                 </div>
                 <div class="col-4 p-0 m-0 row">
                     <div class="col-6 p-0 m-0"></div>
-                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+                    <div class="col-6 p-0 m-0"></div>
 
                 </div>
             </div>
@@ -207,7 +209,7 @@ color: white;
                 </div>
                 <div class="col-4 p-0 m-0 row">
                     <div class="col-6 p-0 m-0"></div>
-                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+                    <div class="col-6 p-0 m-0"></div>
 
                 </div>
             </div>
@@ -216,12 +218,12 @@ color: white;
         <div class="groups row container-fluid p-0 m-0">
 
             <div class="name col-4 p-0 m-0 flexy bdrl px-2 ">
-              <a href="load_stock_group"><h6>July</h6></a>  
+              <a href="load_stock_vouchers"><h6>July</h6></a>  
             </div>
             <div class="cash  col-8 row p-0 m-0 text-center">
                 <div class="col-4 p-0 m-0 bdrl row container-fluid">
-                    <div class="col-6 p-0 m-0"></div>
-                    <div class="col-6 p-0 m-0"></div>
+                    <div class="col-6 p-0 m-0">{{Julyq}}</div>
+                    <div class="col-6 p-0 m-0">{{Julyv}}</div>
 
                 </div>
                 <div class="col-4 p-0 m-0 bdrl row ">
@@ -230,8 +232,8 @@ color: white;
 
                 </div>
                 <div class="col-4 p-0 m-0 row">
-                    <div class="col-6 p-0 m-0"></div>
-                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+                    <div class="col-6 p-0 m-0">{{Julyq}}</div>
+                    <div class="col-6 p-0 m-0">{{Julyv}}</div>
 
                 </div>
             </div>
@@ -254,7 +256,7 @@ color: white;
                 </div>
                 <div class="col-4 p-0 m-0 row">
                     <div class="col-6 p-0 m-0"></div>
-                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+                    <div class="col-6 p-0 m-0"></div>
 
                 </div>
             </div>
@@ -278,7 +280,7 @@ color: white;
                 </div>
                 <div class="col-4 p-0 m-0 row">
                     <div class="col-6 p-0 m-0"></div>
-                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+                    <div class="col-6 p-0 m-0"></div>
 
                 </div>
             </div>
@@ -302,7 +304,7 @@ color: white;
                 </div>
                 <div class="col-4 p-0 m-0 row">
                     <div class="col-6 p-0 m-0"></div>
-                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+                    <div class="col-6 p-0 m-0"></div>
 
                 </div>
             </div>
@@ -326,7 +328,7 @@ color: white;
                 </div>
                 <div class="col-4 p-0 m-0 row">
                     <div class="col-6 p-0 m-0"></div>
-                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+                    <div class="col-6 p-0 m-0"></div>
 
                 </div>
             </div>
@@ -350,7 +352,7 @@ color: white;
                 </div>
                 <div class="col-4 p-0 m-0 row">
                     <div class="col-6 p-0 m-0"></div>
-                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+                    <div class="col-6 p-0 m-0"></div>
 
                 </div>
             </div>
@@ -374,7 +376,7 @@ color: white;
                 </div>
                 <div class="col-4 p-0 m-0 row">
                     <div class="col-6 p-0 m-0"></div>
-                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+                    <div class="col-6 p-0 m-0"></div>
 
                 </div>
             </div>
@@ -398,7 +400,7 @@ color: white;
                 </div>
                 <div class="col-4 p-0 m-0 row">
                     <div class="col-6 p-0 m-0"></div>
-                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+                    <div class="col-6 p-0 m-0"></div>
 
                 </div>
             </div>
@@ -422,7 +424,7 @@ color: white;
                 </div>
                 <div class="col-4 p-0 m-0 row ">
                     <div class="col-6 p-0 m-0"></div>
-                    <div class="col-6 p-0 m-0">1500.00Rs</div>
+                    <div class="col-6 p-0 m-0"></div>
 
                 </div>
             </div>
